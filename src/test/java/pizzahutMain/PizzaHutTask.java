@@ -57,10 +57,9 @@ public class PizzaHutTask extends ActionPizzaHut{
         typeInaTextBox(homepageObject.addLocation(),"cummins college");
         Thread.sleep(1000);
         hitEnter(homepageObject.addLocation());
-        Thread.sleep(10000);
+        Thread.sleep(1000);
 
         //validate deals URL
-        clickImplictWait(homepageObject.unwantedPopup());
         Assert.assertTrue(validateElementPresent(orderpageObject.checkDealsURL()));
 
         //click on Pizza Link

@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="17.973">
+           time="11.730">
     <properties></properties>
 
 
 
             <testcase
                 name="pizzaHutOperations"
-                time="17.973"
+                time="11.730"
                 classname="pizzahutMain.PizzaHutTask">
             </testcase>
 </testsuite>
