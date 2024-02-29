@@ -53,7 +53,7 @@ public class PizzaHutTask extends ActionPizzaHut{
         //Go to homepage and enter address
         Assert.assertTrue(validateElementPresent(homepageObject.addLocation()));
         clickImplictWait(homepageObject.addLocation());
-        clickImplictWait(homepageObject.unwantedPopup());
+        //clickImplictWait(homepageObject.unwantedPopup());
         typeInaTextBox(homepageObject.addLocation(),"cummins college");
         Thread.sleep(1000);
         hitEnter(homepageObject.addLocation());
