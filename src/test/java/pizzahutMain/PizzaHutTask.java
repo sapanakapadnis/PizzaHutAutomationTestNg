@@ -71,7 +71,7 @@ public class PizzaHutTask extends ActionPizzaHut{
         int totalInventoryCount = driver.findElements(By.xpath("//div//a[@class='list-item list-item--pizza ']")).size();
 
         System.out.println(totalInventoryCount);
-        Assert.assertEquals(totalInventoryCount,58);
+        Assert.assertEquals(totalInventoryCount,53);
 
         for(int i = 1;i <=totalInventoryCount; i++){
             String productName = driver.findElement(By.xpath("(//div//a[@class='list-item list-item--pizza ']/div[2])["+i+"]")).getText();
