@@ -89,10 +89,25 @@ public class PizzaHutTask extends ActionPizzaHut{
         clickImplictWait(popupPageObject.closeButton());
         //add pizza in cart
         clickImplictWait(orderpageObject.addPizza());
+
+        //count 1
+        String count1 = driver.findElement(By.xpath("//span[@class='bg-green-dark pl-5 pr-5 rounded']")).getText();
+
+        Assert.assertEquals(count1,"1 item");
+
+        
         //click on drinks
         clickImplictWait(orderpageObject.drinksLink());
         //add drinks
         clickImplictWait(orderpageObject.addDrinks());
+
+
+        //count 2
+        String count2 = driver.findElement(By.xpath("//span[@class='bg-green-dark pl-5 pr-5 rounded']")).getText();
+
+        Assert.assertEquals(count2,"2 items");
+
+        
         //click checkout button
         clickImplictWait(orderpageObject.checkoutButton());
 
